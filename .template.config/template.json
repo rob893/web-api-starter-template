@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Robert Herber",
+  "classifications": ["Web API"],
+  "name": "Starter Web API",
+  "identity": "RHerber.Starter.API",
+  "groupIdentity": "RHerber.Starter.API",
+  "shortName": "starterwebapi",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "ProjectTemplate",
+  "preferNameDirectory": true,
+  "symbols": {
+    "includetest": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "true"
+    }
+  },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "condition": "(!includetest)",
+          "exclude": ["ProjectTemplate.Test/**/*"]
+        }
+      ]
+    }
+  ]
+}
